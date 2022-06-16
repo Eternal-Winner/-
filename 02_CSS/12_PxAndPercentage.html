@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            /* 
+                Unit  of length:pixel
+                     
+            */
+            width: 300px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .box2{
+            width: 50%;
+            height: 50%;
+            background-color: aqua;
+
+            /* 
+                -Percentage:Setting it attribute as percentage 
+                    for father elements;
+                -Setting percentage have the advantage 
+                    that can change following the father elements.
+            */
+        }
+
+        .box3{
+            font-size: 30px;
+            /* width: 10em;
+            height: 10em; */
+            width: 10rem;
+            height: 10rem;
+            background-color:greenyellow;
+            /* 
+                em:
+                    -em is calculate by font-size of character.
+                    -1em = 1font-size.
+                    -em' changing follow the font-size.
+                rem:
+                    -rem -em is calculate by font-size of root-element.
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"> 
+        <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+    
+</body>
+</html>

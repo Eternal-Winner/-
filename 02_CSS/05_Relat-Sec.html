@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            Setting the color of character for child Combinator span of div.
+
+            ChileCombinator Slc
+                Effect:Selecting designated  child-Combinator of Father-Combinator
+            Lge: Far-Combinator > cld-Combinator 
+        */
+
+        div.box > span{
+            color:orange
+        }
+
+        /* 
+            DescCombinatorSlc:
+                Effect:Selecting  designated DescCombinator in designated Combinator.
+        */
+        div span{
+            color: purple;
+        }
+
+        /* 
+            BroSlc
+                + Ef:Selecting Combinator next BroCombinator
+                Lge:pre + cur  
+
+                ~Ef:Selecting all bro-Combinator at after cur-one
+                Lge:
+
+        */
+        p + span{
+            color:tomato;
+        }
+        
+        div.Bro,p ~ span{
+            color:green
+        }
+    </style>
+
+    
+</head>
+<body>
+    <!-- 
+        Father Combinator
+            :Directly contain Child-Combinator called Far-Combinator
+        Child Combinator:
+            :Directly be contained by Far-Combinator called Child-Combinator
+        Ancestor Combinator
+            :Directly or indirectly contain desc-Combinator called Ancestor
+        Descendant Combinator
+            :Directly or indirectly be contained by Ancestor-Combinator called Ancestor
+        BroCombinator
+            :Existing same far-Combinator is Bro-Combinator
+     -->
+    <div class="box">
+        I am a div
+        <p>
+            I am a Combinatorment in div 1
+            <br>
+            <span>I am a span in p </span>
+        </p>
+        <span>I am a span in div</span>
+
+    </div>
+
+    <div>
+        I am a div
+        <p>
+            I am a Combinatorment in div 2
+            <br>
+            <span>I am a span in p </span>
+        </p>
+        <span>I am a span in div</span>
+
+    </div>
+
+    <div class="Bro">
+        I am a div
+        <p>
+            I am a Combinatorment in div 3
+            <br>
+            <span>I am a span in p </span>
+        </p>
+        <span>I am a span in div</span>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: yellow;
+        }
+        .red {
+            color:tomato
+        }
+        #box1{
+            color:aqua
+        }
+        div#box1{
+            color: red;
+        }
+        div,span,p{
+            color:blue;
+        }
+        div{
+            font-size:30px;
+        }
+        *{
+            font-size:50px;
+        }
+        /*GroupSelector Calculate Separate*/
+
+        /* 
+         The conflict of style :
+
+         Being decided by weight of selector(priority).
+
+         The weight of selector:
+            Inline Selector:                    1,0,0,0
+            id selector:                        0,1,0,0
+            class and pseudo class selector:    0,0,1,0
+            elements selector:                  0,0,0,1
+            Common Selector                     0,0,0,0
+            Inherit Selector                    null
+        -Accumulating Select Cannot Overtake The Biggest Magnitude
+        -If existing same priority level after calculate the priority level,preferring
+        use real style.
+
+        -Adding the !important  tag behind a style, the style acquire super-priority,
+            even overtake inline style.
+        */
+    </style>
+</head>
+<body>
+    <div id="box1" class="red" ">I am a div</div>
+    <!-- <div id="box1" class="red" style="color: red;">I am a div</div> -->
+    <div>
+        I am a div.
+        <br><br>
+        <span>I am span in div</span>
+    </div>
+</body>
+</html>

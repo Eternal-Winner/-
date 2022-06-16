@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            -The inherit CSS keyword causes the element to take the computed value 
+                of the property from its parent element. It can be applied to any CSS property, 
+                including the CSS shorthand property all.
+            -Notice:
+                The style of Background and layout and also cannot be inherit. 
+
+        */
+        p{
+            color:red;
+        }
+        div{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        I am p elements
+        <br>
+        <span>I am span in p</span>
+    </p>
+    <div>
+        <span>
+            I am span in div
+            <br>
+            <em>
+                I am em in span
+            </em>
+        </span>
+    </div>
+    
+</body>
+</html>

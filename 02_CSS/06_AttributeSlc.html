@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* p[title]{color:blanchedalmond;} */
+        /* [AttrName] Selecting the ele of containing designed attribute */
+
+        [title=abc]{color:aqua}
+        /* [AttrName=AttrValue]Selecting the ele with designated attribute and attribute-value */
+
+        [title^=hel]{color: tomato;}
+        /* [AttrName^=AttrValue] Selecting ele starting with AttrValue */
+
+        [title$=def]{color: green;}
+        /* [AttrName^=AttrValue] Selecting ele ending with AttrValue */
+
+        [title*=def]{color: green;}
+        /* [AttrName^=AttrValue] Selecting ele contain AttrValue */
+    </style>
+</head>
+<body>
+    <h1 title="abc">I am headline</h1>
+    <p title="abcdef">落霞与孤鹜齐飞，</p>
+    <p title="hello">秋水共长天一色</p>
+    <p>少小离家老大回，乡音无改鬓毛衰</p>
+    <p>儿童相见不相识，笑问客从何处来</p>
+</body>
+</html>

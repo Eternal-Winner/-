@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Setting first li as red color in ul */
+
+        /*  
+            Pseudo-classes:
+                -A CSS pseudo-class is a keyword added to a selector that 
+                    specifies a special state of the selected element(s). 
+                -For example, :hover can be used to change a button's color when 
+                    the user's pointer hovers over it.
+                -:dir
+                    The directionality pseudo-class selects an element 
+                        based on its directionality as determined by the document language.
+
+            Above pseudo classes order by all child elements.
+
+            :first-of-type
+            :last-of-type
+            :nth-of-type()
+                :The function of those pseudo are similar with above-mentioned,
+                difference is those order by same type elements.
+
+            not()
+                :The :not() CSS pseudo-class represents elements that do not match a list of selectors. 
+
+
+        */
+
+        ul > li:first-child{/*first-child last-child nth-child()*/
+            color: bisque;
+        }
+        ul>li:not(:nth-child(1)){
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+   <ul>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+    <li>Fourth</li>
+    <li>Fifth</li>
+   </ul>
+
+</body>
+</html>

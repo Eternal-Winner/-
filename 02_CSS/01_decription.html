@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- (MethodII Inside style sheets)
+    --Second method is encoding the style into head,
+     and then select elements and setting the various style of tag by using CSS .
+     It can setting many tag style,and when modifying just modify one.
+     -Inside style sheets(ISS) are more convenient to repeat to use style.
+     Problem:
+        ISS only have an effect on cur page
+            it style can't repeat using at across-page.
+            
+ -->
+    <!-- <style>
+        p {
+            color: green;
+            font-size: 50px;
+        }
+    </style> -->
+
+    <!-- 
+    Method III(Outer style sheets (OSS)):
+        -Encoding CSS style into an outside file
+            then import the outside file by link tag.
+        -The link tag need be used when using outside style.
+            That mean the all WP which need use the style can quote it which
+            enable style can using again and again.
+        
+ -->
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+
+<body>
+    <!-- 
+    The webpage is divided by 3 parts:
+        Structure(HTML):
+        Display(CSS):
+        Behaviour(Javascript):
+        CSS(Cascading Style Sheets) :
+            In fact,webpage is a multilayer structure, using CSS could setting 
+            format of any-layer for a page, but we only see top level of
+            webpage.
+        In short of ,CSS is used to setting format of WP.
+
+ -->
+
+    <!-- Using CSS modify format of element 
+        Method I:
+         --  By means of style attribute to setting formant of elements. 
+         --Problem:
+            Using inline-format only take effect for one, 
+                If hope influencing more elements must to copy.
+                and when the format occur changing,we must modify one by one
+                that's very inconvenient.
+            Notice:When developing never use inline style.
+         
+    -->
+    <!-- <p style="color:red; font-size:30px;">少小离家老大回，乡音无改鬓毛衰</p>
+    <p>The weather of today is good.</p> -->
+    <p>落霞与孤鹜起飞，秋水共长天一色。</p>
+    <p>少小离家老大回，乡音无改鬓毛衰</p>
+
+
+</body>
+
+</html>

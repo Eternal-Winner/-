@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  
+        Compound Selector:
+
+    -->
+    <style>
+        /* Setting the character of red-class elements as red color  */
+        
+        .red {
+            color: red;
+        }
+        /*Setting the size of character of div with red-class as 30px*/
+        
+        /*  
+            IntersectionSec:
+                Effect:Selecting compound-selector
+                Lge:Sec1.Sec2.Sec3{}
+                Notice:
+                    If IntersectionSec exits EleSec must use the EleSec at the begging position.
+        */
+        
+        div.red {
+            font-size: 30px;
+        }
+        
+        /* 
+            UnionSelect:
+                Effect:Simultaneous select many Sec's elements
+                Lge:Sec1,Sec2,Sec3{}
+
+                p1,h1,span,div.red{}
+         */
+        h1,span {
+                color: aquamarine;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="red">I am div</div>
+
+    <p class="red">I am p</p>
+    <h1>H1</h1>
+    <span>span</span>
+</body>
+
+</html>

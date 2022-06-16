@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    When we need from a webpage of inside server  to another webpage,usually we use relpath
+        All of relpath are beginning with . or .. 
+            ./
+            ../
+
+        ./ can omit, and if not write ./ and ../ seem as wrote ./  .
+        
+        ./ present current profile directory
+            - Here, cur page just is the 09.relpath.html
+            - ./ just equaled with  directory of path with  09.Relpath.html (path)
+
+        
+ -->
+    <a href="../07List.html">Hyperlink0</a>
+    <br><br>
+    <a href="target.html">Hyperlink1</a>
+    <br><br>
+    <a href="./inner/target2.html">Hyperlink2</a>
+    <br><br>
+    <a href="../outer/target3.html">Hyperlink3</a>
+</body>
+
+</html>

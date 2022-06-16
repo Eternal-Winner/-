@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    Audio tag use to quote a audio outer file .
+       When Audio and video file ,defaulted user cannot control to stop play.
+    Attribute:
+        controls:Weather allowing user control paly.
+        autoplay:Weather audio file auto play.
+            -if setting autoplay 
+        loop : The music weather loop play.
+ -->
+    <audio src="./Source/音视频/audio.mp3 " controls autoplay loop></audio>
+    <audio controls>
+        <!-- Sorry your Browser don't support play audio! Please update your browser. -->
+        <source src="./Source/音视频/audio.ogg">
+        <source scr="./Source/音视频/audio.mp3">
+        <embed src="./Source/音视频/audio.mp3" type="audio/mp3" width="300" height="50">
+    </audio></body>
+
+<!-- 
+        Using video tag to quote a video file
+        Using method as same as  audio
+     -->
+<video controls>
+    <source src="./Source/音视频/flower.mp4">
+    <source scr="./Source/音视频/flower.webm">
+    <embed src="./Source/音视频/flower.mp4" type="video/mp4">
+</video>
+
+
+
+</html>

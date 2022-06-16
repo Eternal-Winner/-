@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width:200px;
+            height: 200px;
+            background-color: aqua;
+            float: left;
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: bisque;
+            float: right;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            clear: both;
+            /*The clear CSS property sets whether an element must 
+                be moved below (cleared) floating elements that precede it. The clear property applies to floating and non-floating elements.
+
+            Reason: After Clearing the float ,browser will add a margin to make 
+                the position to get rid of influence from others elements.
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: turquoise;
+            float:left
+            /* The float CSS property places an element on the left or right side 
+                of its container, allowing text and inline elements to wrap around it.
+                 The element is removed from the normal flow of the page, 
+                 though still remaining a part of the flow (in contrast to absolute positioning).
+                 
+                Notice:When style float,the horizontal equation needn't compulsory execution.
+                    When element style float, it will detach the normal flow,not occupying space in
+                        normal flow, therefore ,the elements which still existed normal flow will move 
+                        toward upe.
+                Trait:
+                    1:Not occupying normal flow.
+                    2:Moving toward left or right of its farther elements
+                    3:It can't exceed boundary of its F-E.
+                    4:The floating elements cannot cover others floating elements.
+                    5:If at the position of floating elements are occupied block-elements,
+                        a floating elements next to the block-elements cannot move upward.
+                    6.Floating cannot beyond its brother elements, the height position is as same as its brother.
+            */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            float:left;
+            
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: #afb;
+
+            float:left;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border:10px red solid;
+
+            /* 
+                BFC(Block Formatting Context)
+                    -BFC,  a hidden environment, can be opened for an element.
+                        When Opening the BFC,the elements become an individual/dependent/separate space
+                            ,therefore,it must be addressed.
+                Trait of elements opening BFC
+                    1:The element is not covered by others floating elements.
+                    2.The element can envelope floating elements.
+                    3.The overlap is not take place in Outer border of father elements and chile elements. 
+                
+                    --Opening BFC according to some special way
+                        1:Styling float(Not recommended)
+                        2:Styling inline-block element to elements.(Not recommended)
+                        3.Styling visible-value to overflow of elements.
+                            Commence way.
+            */
+            /* 1:float: left; */
+            /* display: inline-block; */
+            overflow: hidden;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+
+            /* 
+            Height of Collapse:
+                In a floating layout, the father-element is defaulted by child-elements
+                    but when the child is floating element ,the child elements is out of normal flow,
+                    therefore, the father element can't be propped leading to loss height of the father element.
+
+
+            */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    <div style="width:100px;height:100px;background-color:yellow"></div>
+</body>
+</html>

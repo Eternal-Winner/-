@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1{
+            /* 
+                -In inline elements  not support width and height.
+                -The inline elements can style padding, but have on influence for layout of webpage in vertical level.
+                -The inline elements can style border, but have on influence for layout of webpage in vertical level.
+                -The inline elements can style margin, but have on influence for layout of webpage in vertical level.
+
+
+             */
+
+            background-color: yellow;
+
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+        }
+
+        a{
+            /* 
+                display tag use to style the  type of elements is displayed.
+                    Optional value:
+                        inline
+                        block
+                        inline-block
+                        table
+                        none
+            */
+            display: inline-block;
+            visibility: visible ;/*Default*/
+            width :100px;
+            height: 100px;
+            background-color: #abc;
+
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript">Hyperlink</a>
+    <span class="s1">
+        I am span
+    </span>
+    <div class="box1"></div>
+</body>
+</html>

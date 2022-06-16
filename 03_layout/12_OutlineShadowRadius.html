@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            margin-bottom: 50px;
+
+            /* 
+                -The box-shadow property enables you to cast a drop 
+                    shadow from the frame of almost any element. 
+                
+            */
+            box-shadow:10px 10px 10px rgba(0, 0, 0, 0.5);
+            /* box-shadow: offset-x offset-y radius color */
+        }
+        .box1:hover{
+            /*  
+                -Outline is a line outside of the element's border. 
+                Unlike other areas of the box, outlines don't take up space, 
+                so they don't affect the layout of the document in any way.
+            */
+
+            /* outline: 10px red solid; */
+            /* border: 10px red solid;      */
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #baf;
+            
+            border-top-left-radius: 10px;
+            /* border-radius:20px / 40px; */
+
+            border-radius: 50%; /*Round shape*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

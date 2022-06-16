@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,.box2{
+            width: 200px;
+            height: 200px;
+            font-size: 100px;
+        }
+        /* 
+            The Cascade of VBoxMargin  
+            In vertical level,One margin next to anther may lead to   overlap.
+            -Bro element:
+                -Two positive:
+                    Using bigger number.
+                -Existing negative:
+                    One P one N: Using sum number.
+                    Both N : Using absolute value for bigger one.
+            -Far element:
+                -(*TopMargin)The margin between Far and Child, the Child margin will deliver to her Far
+                -Overlapping of FarE and ChildE will influence the layout of webpage,therefor, it must be addressed.
+
+            
+        */
+
+
+        .box1{
+            background-color: aqua;
+            margin-bottom: 100px;
+        }
+        .box2{
+            background-color: purple;
+
+            /* Setting a margin-bottom */
+            margin-bottom: 100px;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border-top: 1px red solid;
+        }
+
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: #fab;
+            margin-top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1"></div>
+    <div class="box2"></div> -->
+
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+</body>
+</html>

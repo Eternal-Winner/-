@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            position: absolute;
+
+            /* 
+            For a positioned box (that is, one with any position other than static), the z-index property specifies:
+
+                The stack level of the box in the current stacking context.
+                Whether the box establishes a local stacking context.
+            */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: #baf;
+          
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: #bcf;
+
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+
+    <div class="box2">2</div>
+    <div class="box3">3
+        <div class="box4">4</div>
+    </div>
+</body>
+</html>

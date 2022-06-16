@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #baf;
+            position: relative;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            /* 
+                left + margin-left+border-left+padding-left+width+padding-right+border-right+margin-right + right= 其父元素内容区的宽度 （必须满足）
+
+                -When the ab-position is used,layout-x need add two value(right left).
+                    When over-constrain,
+                        If not exit auto in 9 value, automatic modify right,
+                        otherwise,modify auto-value.
+                    -Can use auto
+                        margin left right width
+                    -Because left and right  defaulted auto, therefore, if left and right is not designed
+                        when the equation doesn't hold, that are modified automatically.
+
+                Equation in vertical level:
+                    top + margin-top/bottom + padding-top/bottom + border-top/bottom + height = height of containing block.
+
+            */
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

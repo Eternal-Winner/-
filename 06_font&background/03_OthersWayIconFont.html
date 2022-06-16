@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./FA/css/all.css">
+
+    <style>
+        /* 
+            Setting icon by pseudo-element
+
+            fab
+            font-family:"Font Awesome 6 Brand";
+
+            fas
+            font-family:"Font Awesome 6 Free";
+            font-weight:900;
+        */
+        li{
+            list-style: none;
+            
+        }
+        li::before{
+            content: '\f6d3';
+            /* font-family: 'Font Awesome 6 Brands'; */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: aqua;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁知盘中餐</li>
+        <li>粒粒皆辛苦</li>
+
+        <!-- 
+            Using icon font by entity.
+                &#xIconName
+
+                <span class="fas">&#xf0f3</span>
+         -->
+        <span class="fas">&#xf0f3</span>
+    </ul>
+</body>
+</html>
